@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Web App</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="heading">Send a Contact Form</h1>
+    </header>
+    <div class="topnav">
+        <a href="#user" id="userTab">User View</a>
+        <a href="#admin" id="adminTab">Admin View</a>
+    </div>
+    <!-- Main section content -->
+    <section id="user">
+        <div class="container">
+            <form method="post" id="contact-form" onsubmit="addUser();return false;">
+                <label for="id">Student ID:</label>
+                <input type="text" id="id" name="id" required>
+                <label for="email">Student Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="citizenship">Country of Citizenship:</label>
+                <select type="text" id="citizenship" name="citizenship" required></select>
+                <label for="residence">Country of Residence:</label>
+                <select type="text" id="residence" name="residence" required></select>
+                <label for="question">Question:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section id="admin">
+        <div id="users-container"></div>
+    </section>
+</body>
+<script src="./contactFormApi.js"></script>
+<script src="./users.js"></script>
+<script src="./admin.js"></script>
+
+</html>

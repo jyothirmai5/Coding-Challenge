@@ -1,0 +1,6 @@
+I have integrated backend API calls to use GET and POST methods
+
+Step 1: Open the Project folder
+Step 2: `npm install` after successful installation of packages
+Step 3: Run `node contactFormApi` to start the backend server
+Step 4: Open index.html or you can click Go Live option in VS code to run the frontend code
